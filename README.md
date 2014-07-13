@@ -10,12 +10,15 @@ Now sending emails from Go is so simple.
 ### What do you get?
 
 - EMail Task
+
 ![EMail Task Dropdown](https://raw.githubusercontent.com/ashwanthkumar/go-cd-simple-email-task-plugin/master/assets/email_task_dropdown.png)
 
 - Neat Popup
+
 ![EMail Task Popup](https://github.com/ashwanthkumar/go-cd-simple-email-task-plugin/raw/master/assets/email_task_popup.png)
 
 - Ofc, with basic validation
+
 ![EMail Popup Validation](https://raw.githubusercontent.com/ashwanthkumar/go-cd-simple-email-task-plugin/master/assets/email_task_validation.png)
 
 
