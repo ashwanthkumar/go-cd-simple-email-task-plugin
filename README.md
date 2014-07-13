@@ -3,7 +3,7 @@
 Now sending emails from Go is so simple. 
 
 ### Setup 
-- Download the `go-cd-simple-email-task-plugin-1.0.jar` 
+- Download the [`go-cd-simple-email-task-plugin-1.0.jar`](https://github.com/ashwanthkumar/go-cd-simple-email-task-plugin/releases/download/1.0/go-cd-simple-email-task-plugin-1.0.jar) 
 - Put it inside your $GO_SERVER/plugins/external
 - Restart your Go Server
 
