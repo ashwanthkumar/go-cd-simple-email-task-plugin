@@ -39,22 +39,19 @@ public class EMailTaskExecutor implements TaskExecutor {
         console.printLine("Running commands: " + mail.command());
 
         Process mailProcess = mail.start();
+        console.readErrorOf(mailProcess.getErrorStream());
+        console.readOutputOf(mailProcess.getInputStream());
 
         if (StringUtils.isNotEmpty(attachmentsString)) {
             String[] attachments = StringUtils.split(attachmentsString, "\n");
             for (String attachment : attachments) {
                 File attachmentFile = new File(workingDirectory + File.separator + StringUtils.trim(attachment));
-                if(!attachmentFile.exists()) {
-                    return ExecutionResult.failure("File " + attachmentFile.getAbsolutePath() + " is not found.");
-                }
                 addAttachment(attachmentFile.getName(), attachmentFile.getAbsolutePath(), mailProcess.getOutputStream());
             }
         }
         IOUtils.copy(new StringReader(messageToSend), mailProcess.getOutputStream());
         IOUtils.closeQuietly(mailProcess.getOutputStream());
 
-        console.readErrorOf(mailProcess.getErrorStream());
-        console.readOutputOf(mailProcess.getInputStream());
         int exitCode = mailProcess.waitFor();
         mailProcess.destroy();
 
