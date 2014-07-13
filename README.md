@@ -19,10 +19,6 @@ This plugin uses `mail` command to send emails. It is assumed the `mail` is conf
 
 ![EMail Task Popup](https://github.com/ashwanthkumar/go-cd-simple-email-task-plugin/raw/master/assets/email_task_popup.png)
 
-- Ofc, with basic validation
-
-![EMail Popup Validation](https://raw.githubusercontent.com/ashwanthkumar/go-cd-simple-email-task-plugin/master/assets/email_task_validation.png)
-
 - Whola! You get the email in your inbox.
 
 ![EMail Received](https://raw.githubusercontent.com/ashwanthkumar/go-cd-simple-email-task-plugin/master/assets/email_with_attachments.png)
