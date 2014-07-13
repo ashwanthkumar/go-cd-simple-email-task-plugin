@@ -16,6 +16,7 @@ public class EMailTask implements Task {
     public static final String TO_ADDRESS = "To";
     public static final String SUBJECT = "Subject";
     public static final String MESSAGE = "Message";
+    public static final String ATTACHMENTS = "Attachments";
 
     @Override
     public TaskConfig config() {
@@ -23,6 +24,7 @@ public class EMailTask implements Task {
         config.addProperty(TO_ADDRESS);
         config.addProperty(SUBJECT);
         config.addProperty(MESSAGE);
+        config.addProperty(ATTACHMENTS);
         return config;
     }
 

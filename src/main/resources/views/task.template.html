@@ -1,21 +1,26 @@
 <div class="form_item_block">
   <label>To:<span class="asterisk">*</span>
   </label>
-  <input type="text" ng-model="To" ng-required="true" />
+  <input class="MB_focusable" type="text" ng-model="To" ng-required="true" />
   <span class="form_error" ng-show="GOINPUTNAME[To].$error.url">Incorrect email address.</span>
   <span class="form_error" ng-show="GOINPUTNAME[To].$error.server">{{ GOINPUTNAME[To].$error.server }}</span>
 </div>
 <div class="form_item_block">
   <label>Subject:<span class="asterisk">*</span>
   </label>
-  <input type="text" ng-model="Subject" ng-required="true" />
+  <input class="MB_focusable" type="text" ng-model="Subject" ng-required="true" />
   <span class="form_error" ng-show="GOINPUTNAME[Subject].$error.url">Subject can't be empty.</span>
   <span class="form_error" ng-show="GOINPUTNAME[Subject].$error.server">{{ GOINPUTNAME[Subject].$error.server }}</span>
 </div>
 <div class="form_item_block">
   <label>Message:<span class="asterisk">*</span>
   </label>
-  <textarea ng-model="Message" ng-required="true" ></textarea>
+  <textarea class="MB_focusable" ng-model="Message" ng-required="true" cols="50" rows="5"></textarea>
   <span class="form_error" ng-show="GOINPUTNAME[Message].$error.url">Message can't be empty.</span>
   <span class="form_error" ng-show="GOINPUTNAME[Message].$error.server">{{ GOINPUTNAME[Message].$error.server }}</span>
+</div>
+<div class="form_item_block">
+  <label>Attachments:</label>
+  <textarea class="code_text MB_focusable" ng-model="Attachments" ng-required="false" cols="50" rows="5" wrap="off"></textarea>
+  <div class="inline_instruction">Enter 1 attachment per line. Make sure the path is relative to the working directory. </div>
 </div>
