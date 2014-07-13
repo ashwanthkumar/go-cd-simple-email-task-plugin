@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<go-plugin id="in.ashwanthkumar.gocd.EMailTask" version="1">
+    <about>
+        <name>EMail Task Plugin</name>
+        <version>1.0.0</version>
+        <target-go-version>14.1.0</target-go-version>
+        <description>Send email from the Pipeline</description>
+        <vendor>
+            <name>Ashwanth Kumar</name>
+            <url>ashwanthkumar.in</url>
+        </vendor>
+        <target-os>
+            <value>Linux</value>
+            <value>Mac OS X</value>
+        </target-os>
+    </about>
+</go-plugin>
