@@ -7,6 +7,8 @@ Now sending emails from Go is so simple.
 - Put it inside your $GO_SERVER/plugins/external
 - Restart your Go Server
 
+This plugin uses `mail` command to send emails. It is assumed the `mail` is configured on all your agent machines.
+
 ### What do you get?
 
 - EMail Task
@@ -24,4 +26,4 @@ Now sending emails from Go is so simple.
 
 ### Notes
 
-This plugin uses the `mail` available on Linux / Mac to send emails, so no Windows for now. I am not aware of how to get the server settings from the plugin so that we can use existing configured settings to send email.   
+This plugin uses the `mail` available on Linux / Mac to send emails, so no Windows for now. I am not aware of how to get the server settings from the plugin so that we can use existing configured settings to send email.
